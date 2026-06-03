@@ -1,17 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Help</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #FFF8F3, #F3E8FF);
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .header {
+            text-align: center;
+            background: #BEE3F8;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            color: #4A4A4A;
+            font-size: 40px;
+        }
+
+        .header p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .help-card {
+            background: white;
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .help-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .help-card h2 {
+            color: #6A5ACD;
+            margin-bottom: 10px;
+        }
+
+        .help-card p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .tips {
+            background: #FFF4B8;
+            border-left: 6px solid #FFC107;
+        }
+
+        .contact {
+            background: #D5F5E3;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            background: #C7F0D8;
+            color: #333;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #A8E6C1;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Help Page</h1>
+    <div class="container">
 
-<p>
-This page provides assistance for the
-Local Community Event Portal.
-</p>
+        <div class="header">
+            <h1>🌟 Community Event Portal Help Center</h1>
+            <p>Everything you need to know about using the portal.</p>
+        </div>
+
+        <div class="help-card">
+            <h2>🏠 Home Section</h2>
+            <p>
+                The Home page displays community announcements,
+                upcoming events, and important updates from the city council.
+            </p>
+        </div>
+
+        <div class="help-card">
+            <h2>🎉 Events Section</h2>
+            <p>
+                Browse community activities such as marathons,
+                music festivals, food fairs, sports events,
+                and environmental drives.
+            </p>
+        </div>
+
+        <div class="help-card">
+            <h2>📝 Registration</h2>
+            <p>
+                Fill out the registration form with your details.
+                After submission, a confirmation message will be displayed.
+            </p>
+        </div>
+
+        <div class="help-card">
+            <h2>📍 Nearby Events</h2>
+            <p>
+                Click "Find Nearby Events" to allow location access.
+                The portal will display your coordinates and help identify
+                events close to your area.
+            </p>
+        </div>
+
+        <div class="help-card tips">
+            <h2>💡 Helpful Tips</h2>
+            <p>
+                • Double-click event images to enlarge them.<br>
+                • Your preferred event is saved automatically.<br>
+                • Use the Clear Preferences button to reset saved data.<br>
+                • Keep your browser updated for the best experience.
+            </p>
+        </div>
+
+        <div class="help-card contact">
+            <h2>📞 Contact Support</h2>
+            <p>
+                Email: support@communityportal.com<br>
+                Phone: +91 9876543210
+            </p>
+        </div>
+
+        <center>
+            <a href="index.html" class="back-btn">⬅ Back to Portal</a>
+        </center>
+
+    </div>
+
+    <footer>
+        © 2026 Local Community Event Portal | Help Center
+    </footer>
 
 </body>
+
 </html>
