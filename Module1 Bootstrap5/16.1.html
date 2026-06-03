@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 16.1 - Fixed Positioning Footer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Extra margin at the bottom of the body prevents the page content 
+           from getting buried behind the fixed footer panel overlay. */
+        body {
+            padding-bottom: 70px;
+        }
+        .dummy-scroll-section {
+            height: 120vh; /* Forces a scrollbar to appear so you can test the layout anchor */
+            background: linear-gradient(#f8f9fa, #dee2e6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5 dummy-scroll-section p-4 rounded shadow-sm">
+        <h3 class="text-center fw-bold">Exercise 16.1: Fixed Position Bottom Utilities</h3>
+        <p class="text-center text-muted">Scroll down this page. Notice how the footer sticks to the bottom rim continuously.</p>
+        
+        <div class="alert alert-info max-width-md mx-auto mt-4" style="max-width: 600px;">
+            <strong>Layout Note:</strong> The dark container block pinned below uses <code>position-fixed bottom-0 start-0 w-100</code> to stay glued onto your browser screen frame.
+        </div>
+    </div>
+
+    <footer class="position-fixed bottom-0 start-0 w-100 bg-dark text-white py-3 shadow-lg">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
+            <span class="small text-white-50">© 2026 Platera Delivery Networks Management Console Portal.</span>
+            <div class="mt-2 mt-sm-0">
+                <a href="#" class="btn btn-outline-primary btn-sm me-2">Terms of Service</a>
+                <button type="button" class="btn btn-primary btn-sm">Support Status</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

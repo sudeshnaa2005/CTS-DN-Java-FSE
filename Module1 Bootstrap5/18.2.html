@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 18.2 - Collapsible Accordion</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h3 class="text-center mb-2">Exercise 18.2: Collapsible Accordion</h3>
+        <p class="text-center text-muted small mb-5">Click individual header tabs to toggle slide-collapse panels.</p>
+
+        <div class="accordion shadow-sm mx-auto" id="faqAccordion" style="max-width: 700px;">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How does the Accordion plugin function?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-secondary">
+                        Bootstrap 5 uses CSS transitions combined with JavaScript event hooks to toggle element display spaces. When you open a panel, any other currently active panel inside the same <code>data-bs-parent</code> container closes automatically.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Is jQuery required for this animation?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-secondary">
+                        <strong>No, absolutely not.</strong> Beginning with version 5, Bootstrap rewrote all underlying plugin codebases using native vanilla JavaScript. This reduces overall page weights and removes dependencies on legacy libraries.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How are items uniquely linked?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-secondary">
+                        Each individual item maps its target by matching the button's <code>data-bs-target="..."</code> selector string directly to the unique ID assigned onto the collapsible content body <code>&lt;div&gt;</code> container block below it.
+                    </div>
+                </div>
+            </div>
+
+        </div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 14.2 - Responsive Sidebar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Give the layout sections custom heights so it looks like a real app workspace */
+        .sidebar-nav-pane {
+            min-height: 80vh;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-dark bg-dark mb-4 shadow-sm">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Platera App Portal</span>
+            <span class="badge bg-primary d-md-none">Mobile View Active</span>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-4">
+        <div class="row">
+            
+            <nav class="col-12 col-md-3 d-none d-md-block bg-white border-end rounded p-3 sidebar-nav-pane shadow-sm mb-4">
+                <h5 class="fw-bold text-secondary border-bottom pb-2 mb-3">Navigation</h5>
+                <ul class="nav flex-column gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active bg-primary text-white rounded p-2" href="#">📊 Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark p-2" href="#">🛒 Active Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark p-2" href="#">📈 Performance Log</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark p-2" href="#">⚙️ App Settings</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="col-12 col-md-9 px-md-4">
+                <div class="card p-4 shadow-sm border-0">
+                    <h3 class="fw-bold mb-2">Main Management Workspace</h3>
+                    <p class="text-muted">This section scales dynamically depending on whether the sidebar panel helper is active or tucked away.</p>
+                    <hr>
+                    
+                    <div class="p-5 bg-light border rounded text-center my-4">
+                        <h4 class="text-secondary">Responsive Viewport Tester</h4>
+                        <p class="small text-muted mb-0">
+                            If you shrink your desktop window down past <strong>768px wide</strong> (tablet breakpoint), the sidebar panel configuration on the left will seamlessly disappear to preserve working screen asset space.
+                        </p>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

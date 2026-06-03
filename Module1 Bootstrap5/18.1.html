@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 18.1 - Modal Popup</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card p-5 shadow-sm mx-auto text-center" style="max-width: 600px;">
+            <h3 class="fw-bold mb-3">Exercise 18.1: JavaScript Modal Popup</h3>
+            <p class="text-muted small mb-4">Clicking the button below invokes the native Bootstrap 5 modal overlay plugin engine.</p>
+            
+            <div>
+                <button type="button" class="btn btn-primary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#plateraActionModal">
+                    Launch Action Popup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="plateraActionModal" tabindex="-1" aria-labelledby="modalTitleLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg border-0">
+                
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold" id="modalTitleLabel">System Notification</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body p-4">
+                    <p class="mb-0 text-secondary">
+                        This popup layer confirms that your local Bootstrap 5 JavaScript plugin file track (<code>js/bootstrap.bundle.min.js</code>) is linked correctly and responding to runtime DOM event hooks perfectly!
+                    </p>
+                </div>
+                
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close Window</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal">Confirm Action</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

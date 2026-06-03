@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9.2 - Button Groups & Toggles</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card p-4 shadow-sm mx-auto" style="max-width: 550px;">
+            <h3 class="text-center mb-2">Exercise 9.2: Button Groups & Toggles</h3>
+            <p class="text-center text-muted small mb-4">Using groups and transforming standard input checkboxes into clickable buttons.</p>
+            
+            <h5 class="text-secondary border-bottom pb-2 mb-3">Basic Button Group (.btn-group)</h5>
+            <div class="mb-4 text-center">
+                <div class="btn-group" role="group" aria-label="Basic anchor example">
+                    <button type="button" class="btn btn-dark">Left</button>
+                    <button type="button" class="btn btn-dark">Middle</button>
+                    <button type="button" class="btn btn-dark">Right</button>
+                </div>
+            </div>
+
+            <h5 class="text-secondary border-bottom pb-2 mb-3">Checkbox Toggle Buttons</h5>
+            <div class="d-flex flex-column gap-2">
+                
+                <div>
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary w-100" for="btncheck1">Toggle Option 1 (Click Me)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-success w-100" for="btncheck2">Toggle Option 2 (Click Me)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-danger w-100" for="btncheck3">Toggle Option 3 (Click Me)</label>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

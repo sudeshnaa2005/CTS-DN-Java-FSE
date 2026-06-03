@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 12.1 - Spacing Utilities</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Custom visual indicators for boxes to clearly see borders, padding, and margins */
+        .outer-box {
+            background-color: #f0f2f5;
+            border: 2px dashed #9ca3af;
+        }
+        .inner-box {
+            background-color: #0d6efd;
+            color: white;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background-color: #198754;
+            color: white;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h3 class="text-center mb-2">Exercise 12.1: Margin and Padding Utilities</h3>
+        <p class="text-center text-muted small mb-5">Visually confirming layout boxes using m-3, mt-4, p-2, and py-5 utility flags.</p>
+
+        <h5 class="text-secondary mb-2">Section A: Standard Margins and Padding</h5>
+        <div class="outer-box mb-4">
+            <div class="inner-box m-3 p-2 rounded">
+                This box has <code>m-3</code> (external space around it) and <code>p-2</code> (compact padding inside).
+            </div>
+        </div>
+
+        <h5 class="text-secondary mb-2 mt-4">Section B: Target Top Margins and Y-Axis Padding</h5>
+        <div class="outer-box">
+            <div class="highlight-box py-5 px-3 rounded">
+                <div class="text-center">
+                    <h5>Generous Vertical Padding Container</h5>
+                    <p class="mb-0 small">This box has <code>py-5</code> creating massive breathing room on the top and bottom edges.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

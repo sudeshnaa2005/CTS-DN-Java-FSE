@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5.2 - Column Reordering</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box {
+            padding: 40px 20px;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h3 class="text-center mb-2">Exercise 5.2: Column Reordering</h3>
+        <p class="text-center text-muted mb-4">Resize your browser width to watch the columns swap places!</p>
+        
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 order-md-2">
+                <div class="box bg-primary shadow-sm">
+                    <h4>Box A</h4>
+                    <p class="mb-0 text-white-50">HTML position: 1st</p>
+                    <code>order-md-2</code>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 order-md-1">
+                <div class="box bg-danger shadow-sm">
+                    <h4>Box B</h4>
+                    <p class="mb-0 text-white-50">HTML position: 2nd</p>
+                    <code>order-md-1</code>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

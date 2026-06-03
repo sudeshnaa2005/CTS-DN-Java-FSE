@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6.2 - Card Flex Layout</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Card component container styling */
+        .custom-card {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 12px;
+            max-width: 500px;
+            margin: 0 auto; /* Centers the entire card on the page */
+        }
+        .status-badge {
+            background-color: #d1e7dd;
+            color: #0f5132;
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h3 class="text-center mb-2">Exercise 6.2: Card Component Flex Layout</h3>
+        <p class="text-center text-muted mb-4">
+            Uses <code>justify-content-between</code> and <code>align-items-center</code> inside a flex container.
+        </p>
+        
+        <div class="custom-card p-4 shadow-sm">
+            
+            <div class="d-flex justify-content-between align-items-center">
+                
+                <div>
+                    <h4 class="mb-1">Order #48291</h4>
+                    <p class="mb-0 text-muted small">Placed via Platera App</p>
+                </div>
+                
+                <span class="status-badge">Delivered</span>
+                
+            </div>
+            
+            <hr class="my-3">
+            <p class="mb-0 text-secondary">Your food package was safely delivered to your doorstep. Enjoy your meal!</p>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4.1 - Sidebar Layout</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .sidebar-box {
+            background-color: #e2e3e5;
+            border: 2px solid #6c757d;
+            padding: 30px 15px;
+            border-radius: 6px;
+        }
+        .content-box {
+            background-color: #cff4fc;
+            border: 2px solid #0aa2c0;
+            padding: 30px 15px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h3 class="mb-4 text-center">Exercise 4.1: Two-Column Layout</h3>
+        
+        <div class="row g-3">
+            <div class="col-12 col-md-3">
+                <div class="sidebar-box text-center">
+                    <h5>Sidebar</h5>
+                    <code>col-md-3</code>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-9">
+                <div class="content-box text-center">
+                    <h5>Main Content Area</h5>
+                    <code>col-md-9</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

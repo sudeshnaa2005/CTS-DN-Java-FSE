@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5.1 - Grid Alignment</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Giving the row a defined height so vertical centering is obvious */
+        .alignment-container {
+            min-height: 350px;
+            background-color: #f8f9fa;
+            border: 2px dashed #6c757d;
+            border-radius: 8px;
+        }
+        .purple-card {
+            background-color: #6f42c1;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h3 class="mb-4 text-center">Exercise 5.1: Horizontal & Vertical Centering</h3>
+        
+        <div class="row alignment-container justify-content-center align-items-center">
+            
+            <div class="col-12 col-md-6">
+                <div class="purple-card text-center shadow">
+                    <h4>Perfectly Centered!</h4>
+                    <p class="mb-0 opacity-75">Centered horizontally and vertically inside a 350px row height container.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

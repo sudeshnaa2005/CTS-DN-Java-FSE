@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 14.1 - Responsive Display Utilities</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h3 class="text-center mb-2">Exercise 14.1: Responsive Display & Visibility</h3>
+        <p class="text-center text-muted small mb-4">Resize your browser window to see these elements hide and reveal themselves dynamically.</p>
+        
+        <div class="card p-4 shadow-sm mx-auto" style="max-width: 700px;">
+            
+            <div class="p-3 mb-3 bg-secondary text-white rounded text-center">
+                📱 <strong>Mobile Viewport Baseline:</strong> This box is visible on all screen sizes.
+            </div>
+
+            <div class="d-none d-md-block p-3 mb-3 bg-primary text-white rounded text-center">
+                 tablets <strong>Tablet Component (d-none d-md-block):</strong> 
+                I am hidden on mobile, but I appear as a block element on screens $\ge 768\text{px}$.
+            </div>
+
+            <div class="d-none d-lg-flex p-3 bg-success text-white rounded justify-content-between align-items-center">
+                <div>
+                    💻 <strong>Desktop Component (d-none d-lg-flex):</strong> 
+                    I only show up on screens $\ge 992\text{px}$.
+                </div>
+                <button class="btn btn-sm btn-light fw-bold text-success">Flex Action</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Responsive Grid</title>
+    <!-- Local Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Temporary styling just so you can easily see the columns */
+        .grid-box {
+            background-color: #f0f2f5;
+            border: 2px solid #0d6efd;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5 text-center">
+        <h2 class="mb-4">Exercise 3.1: Responsive Grid Columns</h2>
+        <p class="text-muted">Resize your browser window to watch the columns shift layouts!</p>
+
+        <!-- The Grid Row -->
+        <div class="row">
+            
+            <!-- Column 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box text-primary">Column 1</div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box text-success">Column 2</div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box text-danger">Column 3</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Local Bootstrap 5 JS Bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
