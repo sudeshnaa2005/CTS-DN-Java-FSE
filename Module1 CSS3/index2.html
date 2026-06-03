@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Portal</title>
+</head>
+<body>
+
+    <h1>Local Community Event Portal</h1>
+
+    <label>Filter Category:</label>
+
+    <select id="categoryFilter">
+        <option>All</option>
+        <option>Music</option>
+        <option>Workshop</option>
+        <option>Art</option>
+    </select>
+
+    <hr>
+
+    <div id="eventContainer"></div>
+
+    <hr>
+
+    <h2>Event Registration</h2>
+
+    <form id="registerForm">
+
+        <input type="text"
+               name="name"
+               placeholder="Enter Name">
+
+        <br><br>
+
+        <input type="email"
+               name="email"
+               placeholder="Enter Email">
+
+        <br><br>
+
+        <select name="event">
+            <option>Music Night</option>
+            <option>Baking Workshop</option>
+            <option>Art Exhibition</option>
+        </select>
+
+        <br><br>
+
+        <button id="registerBtn">
+            Register
+        </button>
+
+    </form>
+
+    <p id="error"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
